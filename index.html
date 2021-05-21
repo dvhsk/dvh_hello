@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="banner">
+		<header>
+			<a href="#" class="logo">DoHung</a>
+			<div class="toggle"></div>
+		</header>
+		<img src="hung2.png" class="men">
+		<div class="content">
+			<div class="contentBx">
+				<h4>Hello,</h4>
+				<h2>I'm DoHung</h2>
+				<h3>DoVietHung OK ?</h3>
+				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Reprehenderit debitis ipsum veritatis aspernatur voluptas inventore tempore earum dolores natus. Itaque, fuga rerum sed cumque expedita nihil voluptas quod eligendi laborum.</p>
+				<a href="http://dvhsk.github.io/music" target="_blank">Chill?</a><a href="#">Chat?</a>
+			</div>
+		</div>
+		<ul class="sci">
+			<li><a href="#"><img src="facebook.png" alt=""></a></li>
+			<li><a href="#"><img src="instagram.png" alt=""></a></li>
+			<li><a href="#"><img src="twitter.png" alt=""></a></li>
+		</ul>
+		<ul class="menu">
+			<li><a href="#">Some of my Website</a></li>
+			<li><a href="http://dvhsk.github.io/dvh">DVH</a></li>
+			<li><a href="http://dvhsk.github.io/dvh1">DVH1</a></li>
+		</ul>
+		<img src="1.png" class="elements"data-speed="8">
+		<img src="2.png" class="elements"data-speed="6">
+		<img src="3.png" class="elements"data-speed="-10">
+		<img src="4.png" class="elements"data-speed="-6">
+	</section>
+	<script>
+		const toggle = document.querySelector('.toggle');
+		const banner = document.querySelector('.banner');
+		toggle.onclick=function(){
+			toggle.classList.toggle('active');
+			banner.classList.toggle('active');
+		}
+
+		function parallax(e){
+			this.querySelectorAll('.elements').forEach(layer =>{
+				const speed = layer.getAttribute('data-speed');
+				const x =(window.innerWidth - e.pageX*speed)/100;
+				layer.style.transform = `translateX(${x}px)`;
+			})
+		}
+		document.addEventListener("mousemove",parallax);
+	</script>
+</body>
+</html>
