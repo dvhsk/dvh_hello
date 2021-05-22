@@ -429,3 +429,17 @@ header .toggle.active
 		transition: 0s;
 	}
 }
+@media (max-height: 371px){
+	.sci{
+		margin-bottom: -25px;
+	}
+	.sci li
+	{
+		width: 30px;
+		height: 30px;
+	}
+	.sci li a img
+	{
+		transform: scale(0.35);
+	}
+}
