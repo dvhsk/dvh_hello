@@ -429,7 +429,7 @@ header .toggle.active
 		transition: 0s;
 	}
 }
-@media (max-height: 371px){
+@media (max-height: 412px){
 	.sci{
 		margin-bottom: -25px;
 	}
