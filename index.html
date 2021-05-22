@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>DVH</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<section class="banner">
 		<header>
@@ -16,43 +19,61 @@
 		<div class="content">
 			<div class="contentBx">
 				<h4>Hello,</h4>
-				<h2>I'm DoHung</h2>
-				<h3>DoVietHung OK ?</h3>
-				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Reprehenderit debitis ipsum veritatis aspernatur voluptas inventore tempore earum dolores natus. Itaque, fuga rerum sed cumque expedita nihil voluptas quod eligendi laborum.</p>
-				<a href="http://dvhsk.github.io/music" target="_blank">Chill?</a><a href="#">Chat?</a>
+				<h2 style="display: inline;" class="h21">I'm </h2>
+				<h2 style="display: inline;" class="h22">DoHung</h2>
+				<!-- <h3>DoVietHung OK ?</h3> -->
+				<div class="text">DoVietHung <span class="typing"></span></div>
+				<p>I added this text to make it less blank, because I don't really know what to write - Google Translate</p>
+				<a href="http://dvhsk.github.io/music" target="_blank">Chill?</a><a onclick ="myFunc()" >Chat?</a>
+
 			</div>
 		</div>
 		<ul class="sci">
-			<li><a href="#"><img src="facebook.png" alt=""></a></li>
-			<li><a href="#"><img src="instagram.png" alt=""></a></li>
-			<li><a href="#"><img src="twitter.png" alt=""></a></li>
+			<li><a href="https://www.facebook.com/dohung.v/" target="_blank"><img src="facebook.png" alt=""></a></li>
+			<li><a href="https://www.instagram.com/dohung.v/" target="_blank"><img src="instagram.png" alt=""></a></li>
+			<li><a href="https://soundcloud.com/dohungsc" target="_blank"><img src="soundcloud.png" alt=""></a></li>
 		</ul>
 		<ul class="menu">
-			<li><a href="#">Some of my Website</a></li>
-			<li><a href="http://dvhsk.github.io/dvh">DVH</a></li>
-			<li><a href="http://dvhsk.github.io/dvh1">DVH1</a></li>
+			<!-- <li><a href="#">Some of my Website</a></li> -->
+			<h2>DoHung again?</h2>
+			<li><a href="http://dvhsk.github.io/dvh" target="_blank">DVH</a></li>
+			<li><a href="http://dvhsk.github.io/dvh1" target="_blank">DVH1</a></li>
 		</ul>
-		<img src="1.png" class="elements"data-speed="8">
-		<img src="2.png" class="elements"data-speed="6">
-		<img src="3.png" class="elements"data-speed="-10">
-		<img src="4.png" class="elements"data-speed="-6">
+		<img src="1.png" class="elements" data-speed="8">
+		<img src="2.png" class="elements" data-speed="6">
+		<img src="3.png" class="elements" data-speed="-10">
+		<img src="4.png" class="elements" data-speed="-6">
 	</section>
 	<script>
 		const toggle = document.querySelector('.toggle');
 		const banner = document.querySelector('.banner');
-		toggle.onclick=function(){
+		toggle.onclick = function () {
 			toggle.classList.toggle('active');
 			banner.classList.toggle('active');
 		}
 
-		function parallax(e){
-			this.querySelectorAll('.elements').forEach(layer =>{
+		function parallax(e) {
+			this.querySelectorAll('.elements').forEach(layer => {
 				const speed = layer.getAttribute('data-speed');
-				const x =(window.innerWidth - e.pageX*speed)/100;
+				const x = (window.innerWidth - e.pageX * speed) / 100;
 				layer.style.transform = `translateX(${x}px)`;
 			})
 		}
-		document.addEventListener("mousemove",parallax);
+		document.addEventListener("mousemove", parallax);
+	</script>
+	<script>
+		var typed = new Typed(".typing", {
+			strings: ["Vietes Hungf","not Vietej Hungf !","no Girl friend","OK ?","Thanks !"],
+			typeSpeed: 100,
+			backSpeed: 60,
+			loop: true
+		});
+	</script>
+	<script>
+		function myFunc(){
+			alert("Use Messenger, bruhhhhhhh =))");
+		}
 	</script>
 </body>
+
 </html>
