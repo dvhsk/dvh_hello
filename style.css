@@ -33,7 +33,7 @@ section::before
 section.active::before
 {
 	background: #21283a;
-	box-shadow: 0 0 0 1200px #1ede6d;
+	box-shadow: 0 0 0 1200px #1eb1de;
 }
 
 header
@@ -114,12 +114,94 @@ header .toggle.active
 	line-height: 1em;
 	color: #fff;
 }
+.content .contentBx h2.h22
+{
+	font-size: 4em;
+	line-height: 1em;
+	-webkit-animation: colorchange 20s infinite alternate;
+}
+@-webkit-keyframes colorchange{
+	0%{
+		color: #2082d3;
+	}
+	5%{
+		color: #4dcf81;
+	}
+	10%{
+		color: #4c4acc;
+	}
+	15%{
+		color: #bd1313;
+	}
+	20%{
+		color: #ffffff;
+	}
+	25%{
+		color: #3d6dd4;
+	}
+	30%{
+		color: #60b381;
+	}
+	35%{
+		color: #126ea3;
+	}
+	40%{
+		color: #d63d3d;
+	}
+	45%{
+		color: #00ff66;
+	}
+	50%{
+		color: #1f73b8;
+	}
+	55%{
+		color: #7f2fda;
+	}
+	60%{
+		color: #bcd44e;
+	}
+	65%{
+		color: #3c3f3d;
+	}
+	70%{
+		color: #a81950;
+	}
+	75%{
+		color: #e6187f;
+	}
+	80%{
+		color: #e46060;
+	}
+	85%{
+		color: #a12708;
+	}
+	90%{
+		color: #7d817f;
+	}
+	95%{
+		color: #06e660;
+	}
+	100%{
+		color: #b3f1cc;
+	}
+}
 .content .contentBx h3
 {
 	font-weight: 300;
 	color: #fff;
 	font-size: 2em;
 	line-height: 1.5em;
+}
+.content .contentBx .text{
+	font-weight: 300;
+	color: #fff;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+.content .contentBx .text .typing
+{
+	color: #ed325f;
+	font-weight: 600;
 }
 .content .contentBx p
 {
@@ -142,6 +224,18 @@ header .toggle.active
 	background: #ed325f;
 	letter-spacing: 2px;
 	border-radius: 14px;
+	-webkit-animation: colorchange1 4s infinite alternate;
+}
+@-webkit-keyframes colorchange1{
+	0%{
+		color:#ffffff ;
+	}
+	50%{
+		color: #00ff66;
+	}
+	100%{
+		color: rgb(0, 0, 0);
+	}
 }
 .content .contentBx a:last-child
 {
@@ -225,6 +319,14 @@ header .toggle.active
 	visibility: visible;
 	opacity: 1;
 }
+.menu h2
+{
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 10px;
+	position:relative;
+	padding: 5px 10px;
+}
 .menu li
 {
 	list-style: none;
@@ -243,6 +345,7 @@ header .toggle.active
 	letter-spacing: 6px;
 	background: #fff;
 	color: #161a23;
+	border-radius: 90px;
 }
 .elements
 {
@@ -301,9 +404,13 @@ header .toggle.active
 	{
 		color: #fff;
 	}
-	.content .contentBx h2
+	.content .contentBx h2.h21
 	{
-		font-size: 2.2em;
+		font-size: 2.45em;
+	}
+	.content .contentBx h2.h22
+	{
+		font-size: 2.45em;
 	}
 	.content .contentBx h3
 	{
