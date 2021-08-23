@@ -243,7 +243,7 @@ header .toggle.active
 	border-radius: 14px;
 	-webkit-animation: colorchange1 4s infinite alternate;
 	animation: flipInY;
-	animation-duration: 4s;
+	animation-duration: 5s;
 }
 @-webkit-keyframes colorchange1{
 	0%{
