@@ -29,6 +29,8 @@ section::before
 	border-radius: 50%;
 	background: #ed325f;
 	transition: 1s;
+	animation: zoomIn;
+	animation-duration: 2s;
 }
 section.active::before
 {
@@ -57,6 +59,8 @@ header .logo
 	text-decoration: none;
 	transition: 0.5s;
 	transform-origin: right;
+	animation: bounceInRight;
+	animation-duration: 3s;
 }
 header .toggle
 {
@@ -68,6 +72,8 @@ header .toggle
 	background-position: center;
 	background-size: 30px;
 	cursor: pointer;
+	animation: bounceInLeft;
+	animation-duration: 3s;
 }
 header .toggle.active
 {
@@ -83,6 +89,8 @@ header .toggle.active
 	bottom: 0;
 	right: 150px;
 	max-width: 400px;
+	animation: bounceInRight;
+	animation-duration: 2s;
 }
 .content
 {
@@ -107,17 +115,22 @@ header .toggle.active
 	font-size: 1.5em;
 	letter-spacing: 2px;
 	margin-bottom: 10px;
+	animation: zoomInDown;
+	animation-duration: 3s;
 }
 .content .contentBx h2
 {
 	font-size: 4em;
 	line-height: 1em;
 	color: #fff;
+	animation:jackInTheBox;
+	animation-duration: 2s;
 }
-.content .contentBx h2.h22
+.content .contentBx h2 span
 {
-	font-size: 4em;
-	line-height: 1em;
+	/* font-size: 1em; */
+	/* line-height: 1em; */
+	/* display: inline; */
 	-webkit-animation: colorchange 20s infinite alternate;
 }
 @-webkit-keyframes colorchange{
@@ -197,6 +210,8 @@ header .toggle.active
 	color: #fff;
 	font-size: 1.5em;
 	line-height: 1.5em;
+	animation: bounceInRight;
+	animation-duration: 4s;
 }
 .content .contentBx .text .typing
 {
@@ -209,6 +224,8 @@ header .toggle.active
 	color: #fff;
 	margin: 10px 0 20px;
 	font-weight: 300;
+	animation: bounceInLeft;
+	animation-duration: 4s;
 }
 .content .contentBx a
 {
@@ -225,6 +242,8 @@ header .toggle.active
 	letter-spacing: 2px;
 	border-radius: 14px;
 	-webkit-animation: colorchange1 4s infinite alternate;
+	animation: flipInY;
+	animation-duration: 4s;
 }
 @-webkit-keyframes colorchange1{
 	0%{
@@ -258,6 +277,8 @@ header .toggle.active
 	z-index: 2;
 	transition: 0.5s;
 	transform-origin: right;
+	animation: zoomInRight;
+	animation-duration: 2s;
 }
 .sci li
 {
@@ -357,6 +378,8 @@ header .toggle.active
 	object-fit: cover;
 	transition: 0.2s;
 	pointer-events: none;
+	animation:fadeIn;
+	animation-duration: 10s;
 }
 .banner.active .elements
 {
