@@ -260,6 +260,7 @@ header .toggle.active
 {
 	background: #1ede6d;
 	color: #111;
+	cursor: pointer;
 }
 .content .contentBx a:hover
 {
